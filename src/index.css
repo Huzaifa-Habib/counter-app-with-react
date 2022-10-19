@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, #b24592, #f15f79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Anton-Regular.ttf);
+}
+
+.main-head{
+    font-family: myFirstfont;
+    letter-spacing:0.3em ;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-num{
+    border: 4px solid aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(10vw);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #27272a;
+}
+
+.btns,.reset-btn{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+}
+
+.btns button{
+    width: calc(15vw);
+    padding: 10px 0px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #27272a;
+    border: 2px solid snow;
+    color: snow;
+    cursor: pointer;
+    
+}
+
+.btns button:hover{
+    background-color: #34d399;
+    color: #27272a;
+
+
+}
+
+.reset-btn button{
+    width: calc(30vw);
+    padding: 10px 0px;
+    margin-left: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #22d3ee;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+
+
+}
+.change-theme{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.change-theme img{
+    cursor: pointer;
+}
+
+
+.dark{
+    background-color: #27272a;
+    height: calc(100vh);
+    overflow: hidden;
+ 
+}
+
+
+@media screen and (max-width:900px) {
+    .btns button{
+        width: calc(20vw);
+    }
+
+    .reset-btn button{
+        width: calc(40vw);
+    }
+
+    
+}
+
+
+@media screen and (max-width:660px) {
+    .btns button{
+        width: calc(25vw);
+    }
+
+    .reset-btn button{
+        width: calc(50vw);
+    }
+
+    .counter-num{
+        width: calc(15vw);
+    }
+
+    
+}
+
+
+@media screen and (max-width:530px) {
+    .btns button{
+        width: calc(38vw);
+    }
+
+    .reset-btn button{
+        width: calc(70vw);
+    }
+
+    .counter-num{
+        width: calc(20vw);
+    }
+
+    
+}
+
+
+
+@media screen and (max-width:360px) {
+    .btns button{
+        width: calc(45vw);
+        font-size: 14px;
+    }
+
+    .reset-btn button{
+        width: calc(70vw);
+    }
+
+    .counter-num{
+        width: calc(30vw);
+    }
+
+    .main-head{
+        font-size: 18px;
+    }
+
+    
+}
+
+
+
