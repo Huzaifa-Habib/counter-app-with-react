@@ -24,7 +24,7 @@ const MainComp = () => {
             
 
             <div className='main-head'>
-                {/* <h1>counter app</h1> */}
+                <h1>counter app</h1>
             </div>
             <div className='counter-num'>
                 <p>{counterNum}</p>
